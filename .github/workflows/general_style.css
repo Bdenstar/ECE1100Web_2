@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background_picture.jpg');
+    background-repeat: repeat;
+    opacity: 0.05;  /* Adjust the opacity here */
+    z-index: -1;  /* Make sure the image stays in the background */
+}
+
+.general_border{
+    display: flex; justify-content: center;
+    text-transform: lowercase; font-size: 160px; text-align: center;
+    margin-left: 40px; margin-right: 40px; margin-top: 30px; 
+}
+
+.general_text {
+    font-family: 'Inter', sans-serif;
+}
+
+#social {
+    background-color: black;
+    min-height: 180px;
+}
